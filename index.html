@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Área del Rectángulo</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Área del Rectángulo</h2>
+        <form id="FormulaR">
+            <div class="form-group">
+                <label for="base">Base (B):</label>
+                <input type="number" class="form-control" id="base" placeholder="Ingresar la base" required>
+                <div class="invalid-feedback">Ingrese un valor correcto para la base.</div>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (H):</label>
+                <input type="number" class="form-control" id="altura" placeholder="Ingresar la altura" required>
+                <div class="invalid-feedback">Ingrese un valor correcto para la altura.</div>
+            </div>
+            <div class="form-group">
+                <label for="area">Área (A):</label>
+                <input type="text" class="form-control" id="area" placeholder="Área" readonly>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcularA()">Calcular</button>
+            <button type="button" class="btn btn-danger" onclick="limpiar()">Limpiar</button>
+        </form>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
